@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: hsla(0, 0%, 95%, 0.18);
 }
 
 h1 {
@@ -37,21 +38,49 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: 0.4s ease;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: hsla(150, 100%, 50%, 0.428);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+table{
+  border-collapse: collapse;
+}
+th{
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+tbody tr, td {
+  border: 3px solid;
+  padding: 15px;
+}
+
+.contact-row{
+  transition: 0.3s ease;
+}
+
+.contact-row:hover {
+  background-color: hsla(150, 100%, 50%, 0.428);
+  cursor: pointer;
+}
+
+.card{
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: white;
 }
 
 @media (prefers-color-scheme: light) {
